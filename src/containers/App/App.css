@@ -1,0 +1,97 @@
+.App-header {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor {
+  position: relative;
+  z-index: 2;
+  width: 60%;
+  max-width: 60%;
+  text-align: center;
+}
+
+.h1 {
+  margin-top: 0px;
+  margin-bottom: 5vh;
+  color: #1d2e6d;
+  font-size: 50px;
+  line-height: 55px;
+}
+
+.h1.blanco {
+  margin-bottom: 2vh;
+  color: #fff;
+}
+
+.pattern {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  width: 25%;
+  height: 100%;
+  background-image: url("https://assets.website-files.com/6092ab5e6c282e355c9dedf5/6092f7a334986972eae44e78_dots.png");
+  background-position: 100% 50%;
+  background-size: auto;
+}
+
+/* #Section
+================================================== */
+
+.section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  padding-left: 10 vw;
+  background-image: linear-gradient(90deg, rgb(99 0 204), transparent 68%),
+    url("https://images.unsplash.com/photo-1484154218962-a197022b5858?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=874&q=80");
+  background-size: auto, cover;
+}
+
+/* #Media
+================================================== */
+
+@media screen and (max-width: 991px) {
+  .section {
+    background-position: 0px 0px, 99% 100%;
+  }
+  .contenedor {
+    max-width: 80%;
+  }
+  .h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    background-position: 0px 0px, 95% 100%;
+  }
+  .contenedor {
+    max-width: 100%;
+    text-align: center;
+  }
+  .h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section {
+    background-position: 0px 0px, 83% 100%;
+  }
+  .contenedor {
+    max-width: 100%;
+  }
+  .h1 {
+    font-size: 25px;
+  }
+}
